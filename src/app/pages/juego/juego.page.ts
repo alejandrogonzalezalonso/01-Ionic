@@ -33,18 +33,18 @@ export class JuegoPage implements OnInit {
     this.cont = 0;
     this.palabra = this.dataservice.cogerPalabra(this.dificultad);
     this.images = [
-      '../../../assets/img/fallo1.PNG',
-      '../../../assets/img/fallo2.PNG',
-      '../../../assets/img/fallo3.PNG',
-      '../../../assets/img/fallo4.PNG',
-      '../../../assets/img/fallo5.PNG',
       '../../../assets/img/fallo6.PNG',
+      '../../../assets/img/fallo5.PNG',
+      '../../../assets/img/fallo4.PNG',
+      '../../../assets/img/fallo3.PNG',
+      '../../../assets/img/fallo2.PNG',
+      '../../../assets/img/fallo1.PNG',
     ];
     this.palabraEscondida = this.palabra;
 
-    this.intentos = 0;
+    this.intentos = 6;
 
-    this.posImagen = this.images[0];
+    this.posImagen = this.images[5];
     this.letraCorrecta = false;
 
     var auxArray = this.palabra.split('');
@@ -71,19 +71,20 @@ export class JuegoPage implements OnInit {
       }
       this.palabra = palabraTransformadaArray.join(' ');
     }
+
     if (this.letraCorrecta === false) {
-      this.intentos++;
-      if (this.intentos >= 6) {
+      this.intentos--;
+      if (this.intentos <= 0) {
         this.mueres();
       } else {
         this.siguienteImagen(this.intentos);
       }
-    }
-    if (this.cont === this.palabraEscondida.length) {
+    } else if (this.cont === this.palabraEscondida.length) {
       console.log('HAS PASADO A VIVES');
       this.vives();
     }
   }
+
   vives() {
     let navigationExtras: NavigationExtras = {
       queryParams: { dificultad: this.dificultad },
