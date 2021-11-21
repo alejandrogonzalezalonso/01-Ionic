@@ -1,0 +1,23 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.botones-pagina-dificultad {
+  display: flex;
+  justify-content: center;
+}
+
+.boton-jugar {
+  width: 70px;
+}
+.boton-ayuda {
+  width: 70px;
+}
+
+.seleccion-dificultad {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}

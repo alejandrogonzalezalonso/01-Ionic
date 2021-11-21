@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>juego</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="imagen">
+    <img src="{{posImagen}}" alt="fallo" />
+  </div>
+  <div class="adivinar">
+    <ion-input
+      type="text"
+      class="ion-text-center"
+      value="{{palabra}}"
+      disabled="true"
+    >
+    </ion-input>
+  </div>
+  <div class="intentos">
+    <h2>YOU HAVE {{intentos}} ATTEMPTS</h2>
+  </div>
+  <div class="botones-letras">
+    <div class="letras">
+      <ion-button id="1" (click)="clickLetra('A','1')" color="dark">
+        A
+      </ion-button>
+      <ion-button id="2" (click)="clickLetra('B','2')" color="dark">
+        B
+      </ion-button>
+      <ion-button id="3" (click)="clickLetra('C','3')" color="dark">
+        C
+      </ion-button>
+      <ion-button id="4" (click)="clickLetra('D','4')" color="dark">
+        D
+      </ion-button>
+      <ion-button id="5" (click)="clickLetra('E','5')" color="dark">
+        E
+      </ion-button>
+    </div>
+    <div class="letras">
+      <ion-button id="6" (click)="clickLetra('F','6')" color="dark">
+        F
+      </ion-button>
+      <ion-button id="7" (click)="clickLetra('G','7')" color="dark">
+        G
+      </ion-button>
+      <ion-button id="8" (click)="clickLetra('H','8')" color="dark">
+        H
+      </ion-button>
+      <ion-button id="9" (click)="clickLetra('I','9')" color="dark">
+        I
+      </ion-button>
+      <ion-button id="10" (click)="clickLetra('J','10')" color="dark">
+        J
+      </ion-button>
+    </div>
+    <div class="letras">
+      <ion-button id="11" (click)="clickLetra('K','11')" color="dark">
+        K
+      </ion-button>
+      <ion-button id="12" (click)="clickLetra('L','12')" color="dark">
+        L
+      </ion-button>
+      <ion-button id="13" (click)="clickLetra('M','13')" color="dark">
+        M
+      </ion-button>
+      <ion-button id="14" (click)="clickLetra('N','14')" color="dark">
+        N
+      </ion-button>
+      <ion-button id="15" (click)="clickLetra('O','15')" color="dark">
+        O
+      </ion-button>
+    </div>
+    <div class="letras">
+      <ion-button id="16" (click)="clickLetra('P','16')" color="dark">
+        P
+      </ion-button>
+      <ion-button id="17" (click)="clickLetra('Q','17')" color="dark">
+        Q
+      </ion-button>
+      <ion-button id="18" (click)="clickLetra('R','18')" color="dark">
+        R
+      </ion-button>
+      <ion-button id="19" (click)="clickLetra('S','19')" color="dark">
+        S
+      </ion-button>
+      <ion-button id="20" (click)="clickLetra('T','20')" color="dark">
+        T
+      </ion-button>
+    </div>
+    <div class="letras">
+      <ion-button id="21" (click)="clickLetra('U','21')" color="dark">
+        U
+      </ion-button>
+      <ion-button id="22" (click)="clickLetra('V','22')" color="dark">
+        V
+      </ion-button>
+      <ion-button id="23" (click)="clickLetra('W','23')" color="dark">
+        W
+      </ion-button>
+      <ion-button id="24" (click)="clickLetra('X','24')" color="dark">
+        X
+      </ion-button>
+      <ion-button id="25" (click)="clickLetra('Y','25')" color="dark">
+        Y
+      </ion-button>
+    </div>
+    <div class="letras">
+      <ion-button id="26" (click)="clickLetra('Z','26')" color="dark">
+        Z
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

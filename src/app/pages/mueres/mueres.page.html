@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>mueres</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="imagen">
+    <img class="imagen-mueres" src="../../../assets/moriste.png" alt="mueres" />
+  </div>
+  <div class="titulo">
+    <h1>YOU LOSE</h1>
+  </div>
+
+  <div class="botones-mueres">
+    <ion-button (click)="cambioAJuego()" color="dark"> TRY AGAIN </ion-button>
+    <ion-button
+      (click)="onClick()"
+      color="dark"
+      routerLink="/dificultad"
+      routerDirection="root"
+    >
+      MENU
+    </ion-button>
+  </div>
+</ion-content>

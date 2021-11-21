@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="imagen">
+    <img src="../../../assets/icono.jpg" alt="logo hangman" />
+  </div>
+  <div class="titulo">
+    <h1>THE HANGMAN</h1>
+  </div>
+  <div class="play-button">
+    <ion-button
+      color="dark"
+      (click)="onClick()"
+      routerLink="/dificultad"
+      routerDirection="root"
+    >
+      PLAY
+    </ion-button>
+  </div>
+</ion-content>

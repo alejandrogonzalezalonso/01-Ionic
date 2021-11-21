@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>dificultad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contenedor-genral">
+    <div class="imagen">
+      <img src="../../../assets/icono.jpg" alt="logo hangman" />
+    </div>
+    <div class="seleccion-dificultad">
+      <ion-item>
+        <ion-label>Seleccion de dificultad</ion-label>
+        <ion-select value="facil" [(ngModel)]="dificultad">
+          <ion-select-option value="facil">Facil</ion-select-option>
+          <ion-select-option value="medio">Medio</ion-select-option>
+          <ion-select-option value="dificil">Dificil</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div class="botones-pagina-dificultad">
+      <ion-button class="boton-jugar" color="dark" (click)="cambioAJuego()">
+        PLAY
+      </ion-button>
+      <ion-button class="boton-ayuda" color="dark" (click)="onClick()">
+        HELP
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
